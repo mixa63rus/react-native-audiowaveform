@@ -98,6 +98,9 @@ public class OGWaveView extends FrameLayout {
     public void onStop(){
         this.mMediaPlayer.stop();
     }
+    public void onPos(float pos) {
+        mUIWave.updatePlayHead(pos);
+    }
 
     public void setAutoPlay(boolean autoplay){
         Log.e(TAG, "setAutoPlay: " + autoplay );
